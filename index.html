@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Nossa Escola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h1 class="login-titulo">Nossa Escola</h1>
+    <div id="login-form">
+      <input type="text" id="login-nome" placeholder="Nome de usuário" required>
+      <input type="password" id="login-senha" placeholder="Senha" required>
+      <button onclick="entrar()">Entrar</button>
+      <button onclick="mostrarCadastro()">Criar Conta</button>
+      <p id="erro-login"></p>
+    </div>
+
+    <div id="cadastro-form" style="display:none;">
+      <input type="text" id="cadastro-nome" placeholder="Novo nome" required>
+      <input type="password" id="cadastro-senha" placeholder="Nova senha" required>
+      <button onclick="cadastrar()">Avançar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
